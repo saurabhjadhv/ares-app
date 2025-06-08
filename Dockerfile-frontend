@@ -1,0 +1,15 @@
+FROM node
+
+ENV BACKEND_URL=http://0.0.0.0:5000
+
+ADD frontend /app
+
+WORKDIR /app
+
+RUN npm install
+
+Run npm install express
+
+ENTRYPOINT [ "npm" ]
+
+CMD [ "start" ]
